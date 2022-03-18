@@ -1,0 +1,32 @@
+<h1>Crear empleados</h1>
+<div>
+    <button style="margin: 10px;" routerLink="/employee">Regresar</button>
+</div>
+<div>
+    <form [formGroup]="createEmployeeFormGroup">
+        <div>
+            <label>Nombre: </label>
+            <input type="text" formControlName="fullName" placeholder="Nombre">
+        </div>
+        <div>
+            <label>Email: </label>
+            <input type="email" formControlName="email" placeholder="Email">
+        </div>
+        <div>
+            <label>Password: </label>
+            <input type="password" formControlName="password" placeholder="password">
+        </div>
+        <div>
+            <label>Tipo: </label>
+            <input type="text" formControlName="userType" placeholder="Tipo">
+        </div>
+        <div>
+            <label>Vacaciones: </label>
+            <input type="number" formControlName="vacationDays" placeholder="vacaciones">
+        </div>
+        <div>
+            <br>
+            <button type="button" (click)="create()">Crear</button>
+        </div>
+    </form>
+</div>

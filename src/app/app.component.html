@@ -1,16 +1,5 @@
 <div>
-    <form [formGroup]="loginFormGroup">
-        <h1>Sing in</h1>
-        <div>
-            <label>Email</label>
-            <input type="email" formControlName="email" placeholder="Email">
-        </div>
-        <div>
-            <label>Password</label>
-            <input type="password" formControlName="password" placeholder="password">
-        </div>
-        <div>
-            <button type="button" (click)="doLogin()">Login</button>
-        </div>
-    </form>
+    <button style="margin: 10px;" routerLink="/login">Log in</button>
+    <button routerLink="/employee">Listar Empleados</button>
 </div>
+<router-outlet></router-outlet>
